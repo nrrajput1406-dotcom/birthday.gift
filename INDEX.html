@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Cutieee 💗</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #923857;
+    background: #fff0f5;
+    overflow-x: hidden;
+}
+
+.page {
+    display: none;
+    min-height: 100vh;
+    padding: 35px 18px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: fade .7s ease;
+}
+
+.page.active {
+    display: flex;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(45px, 9vw, 78px);
+    color: #e94d8b;
+    margin: 16px 0;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.9;
+    max-width: 620px;
+    margin: 10px auto;
+}
+
+button {
+    border: 1px solid white;
+    border-radius: 35px;
+    padding: 12px 22px;
+    margin: 8px 4px;
+    background: #eb6096;
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 13px;
+    box-shadow: 0 5px 18px #efb0ca;
+    transition: .3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: #d83d7c;
+}
+
+/* PAGE 1 */
+
+.hero {
+    color: white;
+    background:
+    linear-gradient(180deg, rgba(95,30,75,.18), rgba(130,35,85,.45)),
+    url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1400&q=85')
+    center/cover;
+}
+
+.hero h1 {
+    color: white;
+}
+
+.hero .music-btn {
+    background: rgba(255,255,255,.2);
+    border: 1px solid white;
+}
+
+.eyebrow {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.heart {
+    font-size: 45px;
+    animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+/* PAGE 2: GALLERY */
+
+.gallery-page {
+    background: linear-gradient(145deg, #fff5f9, #fbd6e6);
+}
+
+.gallery {
+    width: 100%;
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 13px;
+    margin: 20px auto;
+}
+
+.card {
+    padding: 7px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px #e8b1c9;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 11px;
+}
+
+.card span {
+    display: block;
+    font-family: 'Dancing Script', cursive;
+    font-size: 19px;
+    padding: 9px 2px;
+    color: #dc4383;
+}
+
+/* BIRTHDAY CAKE */
+
+.cake-area {
+    background: #fff8fb;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 25px;
+    padding: 25px 12px;
+    margin: 18px auto;
+    box-shadow: 0 8px 28px #f1bad0;
+}
+
+.cake {
+    position: relative;
+    width: 180px;
+    height: 125px;
+    margin: 50px auto 15px;
+}
+
+.cake-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 180px;
+    height: 65px;
+    background: #f5a5c2;
+    border-radius: 10px 10px 20px 20px;
+    border-bottom: 8px solid #e879a4;
+}
+
+.cake-top {
+    position: absolute;
+    top: 28px;
+    width: 180px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffdbeb;
+    border: 3px solid #f39abd;
+}
+
+.icing {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 180px;
+    height: 22px;
+    background: #fff4f8;
+    border-radius: 0 0 15px 15px;
+}
+
+.candle {
+    position: absolute;
+    width: 12px;
+    height: 48px;
+    background: repeating-linear-gradient(
+        45deg,
+        #fff 0 5px,
+        #ff6d9f 5px 10px
+    );
+    top: -20px;
+    left: 84px;
+    border-radius: 4px;
+}
+
+.flame {
+    position: absolute;
+    width: 17px;
+    height: 23px;
+    background: #ffb52e;
+    border-radius: 50% 50% 40% 40%;
+    top: -22px;
+    left: -3px;
+    box-shadow: 0 0 15px #ffac33;
+    animation: flicker .5s infinite alternate;
+}
+
+@keyframes flicker {
+    from {
+        transform: scale(1) rotate(-4deg);
+    }
+    to {
+        transform: scale(1.1) rotate(4deg);
+    }
+}
+
+.candle.blown .flame {
+    display: none;
+}
+
+.cake-message {
+    color: #e34d87;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    min-height: 35px;
+}
+
+/* PAGE 3: LETTER */
+
+.letter-page {
+    background: linear-gradient(140deg, #ffe9f1, #f8bfd5);
+}
+
+.letter {
+    max-width: 620px;
+    width: 100%;
+    padding: 30px 25px;
+    background: #fffaf6;
+    border: 1px solid #f3c0d2;
+    box-shadow: 0 8px 28px #e3a1bd;
+    border-radius: 8px;
+}
+
+.letter p {
+    text-align: left;
+}
+
+.signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    color: #d93d7d;
+    margin-top: 20px;
+}
+
+.secret-box {
+    display: none;
+    max-width: 520px;
+    width: 100%;
+    margin: 18px auto;
+    padding: 25px;
+    background: #fff9fc;
+    border: 2px dashed #f08ab2;
+    border-radius: 18px;
+    animation: fade .8s ease;
+}
+
+.secret-box.open {
+    display: block;
+}
+
+.secret-box h2 {
+    color: #e64c8c;
+}
+
+/* PAGE 4: DATE INVITATION */
+
+.date-page {
+    background: linear-gradient(135deg, #ffe4ec, #fff0f5, #ffd6e5);
+}
+
+.date-card {
+    width: 100%;
+    max-width: 540px;
+    padding: clamp(25px, 6vw, 45px) 24px;
+    background: rgba(255,255,255,.86);
+    border: 2px solid #ffc0d5;
+    border-radius: 30px;
+    box-shadow: 0 15px 45px rgba(230,80,140,.2);
+}
+
+.date-heart {
+    font-size: 55px;
+    animation: pulse 1.2s infinite;
+}
+
+.date-card .small-title {
+    color: #d66b94;
+    letter-spacing: 4px;
+    font-size: 10px;
+}
+
+.date-card h1 {
+    font-size: clamp(42px, 8vw, 65px);
+}
+
+.date-card h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(18px, 4vw, 23px);
+    color: #b34470;
+    line-height: 1.6;
+    margin: 22px 0;
+}
+
+.date-card .date-text {
+    color: #805367;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.date-card .date-question {
+    color: #d63384;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 22px auto;
+}
+
+.date-card .no-btn {
+    background: #ffe4ec;
+    color: #b34470;
+}
+
+#dateReply {
+    margin-top: 20px;
+    color: #d63384;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.date-card .bottom-note {
+    margin-top: 28px;
+    font-size: 11px;
+    color: #a77a8c;
+}
+
+/* HEARTS AND CONFETTI */
+
+.confetti {
+    position: fixed;
+    top: -20px;
+    z-index: 100;
+    pointer-events: none;
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(700deg);
+        opacity: 0;
+    }
+}
+
+.floating {
+    position: fixed;
+    bottom: -35px;
+    z-index: 10;
+    pointer-events: none;
+    animation: floatUp 7s linear forwards;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(35deg);
+        opacity: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card img {
+        height: 175px;
+    }
+
+    .letter {
+        padding: 22px 17px;
+    }
+
+    .date-card {
+        padding: 30px 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1: BIRTHDAY WELCOME -->
+
+<section class="page hero active" id="page1">
+
+    <div class="heart">🎀💗</div>
+
+    <p class="eyebrow">
+        A little surprise for someone special
+    </p>
+
+    <h1>
+        Happy Birthday<br>
+        Cutieee! ♡
+    </h1>
+
+    <p>
+        Today is all about you! 🌷<br>
+        Someone made a little corner of the internet
+        just to make you smile.
+    </p>
+
+    <div style="margin:20px auto;padding:15px 28px;background:rgba(255,255,255,0.2);border:1px solid white;border-radius:25px;display:inline-block;backdrop-filter:blur(8px)">
+
+        <p style="margin:0;font-size:12px;letter-spacing:2px">
+            🎀 A DAY MADE FOR YOU Mrs KHUSHI RAJPUT🎀
+        </p>
+
+        <h2 style="margin:8px 0 0;font-family:'Dancing Script',cursive;font-size:32px;color:white">
+            10 October 🎂
+        </h2>
+
+    </div>
+
+    <button onclick="showPage(2)">
+        Open Your Surprise 💌
+    </button>
+
+    <br>
+
+    <audio id="music" loop preload="none">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" onclick="toggleMusic()" id="musicButton">
+        🎵 Just For Youuu
+    </button>
+
+    <p style="font-size:11px;color:white">
+        Made with love, just for Cutieee ♡
+    </p>
+
+</section>
+
+
+<!-- PAGE 2: PHOTO GALLERY AND CAKE -->
+
+<section class="page gallery-page" id="page2">
+
+    <p class="eyebrow">
+        A little collection of pretty moments
+    </p>
+
+    <h1>Your Beautiful World 🌸</h1>
+
+    <p>
+        Some pictures are more than just pictures.
+        They capture a smile, a feeling and a moment
+        worth remembering. ✨
+    </p>
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="image1.jpeg" alt="Memory 1">
+            <span>That pretty smile ♡</span>
+        </div>
+
+        <div class="card">
+            <img src="image2.jpeg" alt="Memory 2">
+            <span>Simply adorable ♡</span>
+        </div>
+
+        <div class="card">
+            <img src="image3.jpeg" alt="Memory 3">
+            <span>A little sunshine ♡</span>
+        </div>
+
+        <div class="card">
+            <img src="image4.jpeg" alt="Memory 4">
+            <span>Forever beautiful ♡</span>
+        </div>
+
+        <div class="card">
+            <img src="image5.jpeg" alt="Memory 5">
+            <span>Pure magic ♡</span>
+        </div>
+
+        <div class="card">
+            <img src="image6.jpeg" alt="Memory 6">
+            <span>Just being you ♡</span>
+        </div>
+
+    </div>
+
+    <div class="cake-area">
+
+        <h2>A Little Birthday Cake 🎂</h2>
+
+        <p>
+            Make a wish, Cutieee!
+            Then tap the candle. 💗
+        </p>
+
+        <div class="cake">
+
+            <div class="cake-bottom"></div>
+            <div class="cake-top"></div>
+            <div class="icing"></div>
+
+            <div class="candle" id="candle">
+                <div class="flame"></div>
+            </div>
+
+        </div>
+
+        <div class="cake-message" id="cakeMessage">
+            Happy Birthday, Cutieee! 💕
+        </div>
+
+        <button onclick="blowCandles()">
+            Blow Out Candles ✨
+        </button>
+
+    </div>
+
+    <button onclick="showPage(1)">
+        ← Previous
+    </button>
+
+    <button onclick="showPage(3)">
+        Open Your Secret Letter 💌
+    </button>
+
+</section>
+
+
+<!-- PAGE 3: BIRTHDAY LETTER -->
+
+<section class="page letter-page" id="page3">
+
+    <p class="eyebrow">
+        A little message from the heart
+    </p>
+
+    <h1>For You, Cutieee ♡</h1>
+
+    <div class="letter">
+
+        <h2>Dear Khushiiii, 🌷</h2>
+
+        <p>
+            Happy Birthday to someone who deserves
+            all the happiness in the world! 🎂
+        </p>
+
+        <p>
+            May your life always be filled with beautiful
+            smiles, peaceful days, unforgettable memories
+            and people who truly appreciate you.
+        </p>
+
+        <p>
+            May every little dream of yours find its way
+            to becoming reality. Never stop smiling,
+            never stop shining, and always remember
+            how special you are. ✨
+        </p>
+
+        <p>
+            I hope this new chapter brings you countless
+            reasons to be happy, magical moments to
+            remember, and beautiful surprises along
+            the way.
+        </p>
+
+        <p>
+            Enjoy your special day, birthday girl.
+            You deserve nothing less than the best! 💗
+        </p>
+
+        <div class="signature">
+            With warm wishes, ❤️<br>
+            Someone Who Wishes You Well
+        </div>
+
+    </div>
+
+    <br>
+
+    <button onclick="unlockSecret()" id="secretButton">
+        🔐 Unlock a Secret Message
+    </button>
+
+    <div class="secret-box" id="secretBox">
+
+        <h2>Just Between Us 💌</h2>
+
+        <p>Hey Babyyyy... 💗</p>
+
+        <p>
+            Cutieee, ek baat bolu? ❤️
+        </p>
+
+        <p>
+            I know 12th is important for you, and I really
+            want you to do your best. Bas abhi thodi mehnat
+            kar lena, apne dreams ke liye aur apne parents
+            ke liye. Ek din jab tumhare parents tumhari
+            wajah se proud feel kare na, toh unki khushi
+            dekhne layak hogi. ❤️
+        </p>
+
+        <p>
+            Aur haan, mujhe bhi tum par proud feel karwana.
+            🫶🏻 I know you can do it, bas khud par bharosa
+            rakhna aur kabhi give up mat karna. Marks chahe
+            jo bhi aaye, mere liye important ye hai ki tum
+            apna best do aur apne dreams ke liye genuinely
+            try karo. Zyada stress mat lena.
+        </p>
+
+        <p>
+            I really want to see you successful and happy
+            one day. Aur jab tum apne dreams achieve karogi
+            na, I hope tumhe yaad rahe ki koi tha jo hamesha
+            tumhare liye achha hi chahta tha. ❤️✨
+        </p>
+
+        <h2>
+            Once again, Happy Birthday, babyyy! 🎂💗
+        </h2>
+
+    </div>
+
+    <button onclick="showPage(1)">
+        ↻ Start Again
+    </button>
+
+    <button onclick="showPage(4)">
+        One Last Question 💌
+    </button>
+
+    <p>Made with 💗, just for you.</p>
+
+</section>
+
+
+<!-- PAGE 4: DATE PROPOSAL -->
+
+<section class="page date-page" id="page4">
+
+    <div class="date-card">
+
+        <div class="date-heart">💗🌷</div>
+
+        <p class="small-title">
+            JUST ONE LAST THING...
+        </p>
+
+        <h1>Cutieee 🎀</h1>
+
+        <h2>
+            Can I Take You On A Date? 🥹
+        </h2>
+
+        <p class="date-text">
+            Just you and me, some good food, lots of
+            laughter, cute little moments and a memory
+            we can smile about. 🌷
+        </p>
+
+        <p class="date-question">
+            Sooo... will you go on a date with me? 💌
+        </p>
+
+        <button onclick="acceptDate()">
+            YESSS 💖
+        </button>
+
+        <button class="no-btn" onclick="declineDate()">
+            NO 🥺
+        </button>
+
+        <div id="dateReply" aria-live="polite"></div>
+
+        <p class="bottom-note">
+            No pressure, Cutieee.
+            Your happiness matters. 🫶🏻
+        </p>
+
+        <button onclick="showPage(1)">
+            ↻ Start Again
+        </button>
+
+    </div>
+
+</section>
+
+
+<script>
+
+/* PAGE NAVIGATION */
+
+function showPage(number) {
+
+    document.querySelectorAll(".page").forEach(page => {
+        page.classList.remove("active");
+    });
+
+    const target = document.getElementById("page" + number);
+
+    if (target) {
+        target.classList.add("active");
+    }
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+
+/* BACKGROUND MUSIC */
+
+const music = document.getElementById("music");
+
+async function toggleMusic() {
+
+    const button = document.getElementById("musicButton");
+
+    try {
+
+        if (music.paused) {
+
+            await music.play();
+            button.textContent = "⏸️ Pause Music";
+
+        } else {
+
+            music.pause();
+            button.textContent = "🎵 Just For Youuu";
+
+        }
+
+    } catch (error) {
+
+        alert("Please make sure music.mp3 is in the same folder as index.html.");
+
+        console.error(error);
+
+    }
+}
+
+
+/* BIRTHDAY CAKE */
+
+let candlesBlown = false;
+
+function blowCandles() {
+
+    if (candlesBlown) {
+
+        document.getElementById("cakeMessage").textContent =
+            "Your birthday wish is on its way! 💖";
+
+        return;
+
+    }
+
+    candlesBlown = true;
+
+    document.getElementById("candle").classList.add("blown");
+
+    document.getElementById("cakeMessage").textContent =
+        "Wish made! Happy Birthday, Cutieee! 🎉💗";
+
+    launchConfetti();
+
+}
+
+
+/* CONFETTI EFFECT */
+
+function launchConfetti() {
+
+    const pieces = ["💗", "💕", "🌸", "✨", "🎀", "🎉"];
+
+    for (let i = 0; i < 65; i++) {
+
+        const item = document.createElement("div");
+
+        item.className = "confetti";
+
+        item.textContent =
+            pieces[Math.floor(Math.random() * pieces.length)];
+
+        item.style.left = Math.random() * 100 + "vw";
+
+        item.style.fontSize =
+            (14 + Math.random() * 18) + "px";
+
+        item.style.animationDuration =
+            (2 + Math.random() * 3) + "s";
+
+        document.body.appendChild(item);
+
+        setTimeout(() => {
+            item.remove();
+        }, 5000);
+
+    }
+
+}
+
+
+/* SECRET LETTER */
+
+function unlockSecret() {
+
+    const box = document.getElementById("secretBox");
+
+    box.classList.toggle("open");
+
+    const button = document.getElementById("secretButton");
+
+    button.textContent = box.classList.contains("open")
+        ? "💖 Hide Secret Message"
+        : "🔐 Unlock a Secret Message";
+
+    if (box.classList.contains("open")) {
+        launchConfetti();
+    }
+
+}
+
+
+/* DATE PROPOSAL: YES */
+
+function acceptDate() {
+
+    document.getElementById("dateReply").innerHTML =
+        "YAYYYY! 🥹💖<br>" +
+        "Let's plan our little date together! 🌷💕";
+
+    launchConfetti();
+
+}
+
+
+/* DATE PROPOSAL: NO */
+
+function declineDate() {
+
+    document.getElementById("dateReply").innerHTML =
+        "It's okay, Cutieee ❤️<br>" +
+        "Your choice matters to me. Always stay happy! 🫶🏻";
+
+}
+
+
+/* FLOATING HEARTS */
+
+const emojis = ["💗", "💕", "♡", "🌸", "✨", "🎀"];
+
+function createHeart() {
+
+    const heart = document.createElement("div");
+
+    heart.className = "floating";
+
+    heart.textContent =
+        emojis[Math.floor(Math.random() * emojis.length)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        (15 + Math.random() * 18) + "px";
+
+    heart.style.animationDuration =
+        (5 + Math.random() * 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 9500);
+
+}
+
+setInterval(createHeart, 600);
+
+</script>
+
+</body>
+</html>
